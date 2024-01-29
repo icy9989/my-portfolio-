@@ -2,6 +2,8 @@ import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
 import Profile from "@/components/profile";
 import Skill from "@/components/skill";
+import Work from "@/components/work";
+import Experiene from "@/components/experience";
 
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       
       <Profile  />
       <Skill />
+      <Work />
+      <Experiene />
     </main>
   );
 }
