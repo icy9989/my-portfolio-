@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Lightbulb } from 'lucide-react';
+import { Lightbulb } from 'lucide-react'
 
 const Skill = () => {
   return (
@@ -7,7 +7,7 @@ const Skill = () => {
         <div className='flex justify-center'>
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>What skills I have?</h1>
         </div>
-        <p className="text-center text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+        <p className="text-center text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p>
         <div className="grid grid-cols-12 gap-4 my-14 justify-center">
           <div className="col-span-2 flex justify-center items-center flex-col">
             <Image 
