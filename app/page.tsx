@@ -4,6 +4,7 @@ import Profile from "@/components/profile";
 import Skill from "@/components/skill";
 import Work from "@/components/work";
 import Experiene from "@/components/experience";
+import Project from "@/components/project";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Skill />
       <Work />
       <Experiene />
+      <Project />
     </main>
   );
 }

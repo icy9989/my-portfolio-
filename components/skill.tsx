@@ -52,7 +52,7 @@ const Skill = () => {
               width={75}
               height={75}
             />
-            <p className="text-center py-3 text-slate-500 font-semibold">Typescript</p>
+            <p className="text-center py-3 text-slate-500 font-semibold">Express.js</p>
           </div>
           <div className="col-span-2 flex justify-center items-center flex-col">
             <Image 
@@ -88,26 +88,17 @@ const Skill = () => {
         </div>
         <div className="grid grid-cols-4 gap-2 my-5">
           <div className="flex justify-center">
-            <div className="w-52 bg-slate-50 rounded-md border-1 p-6">
-                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-slate-200">
+            <div className="w-52 bg-[#FCFCDB] rounded-md border-1 p-6">
+                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-yellow-200/60">
                   <Lightbulb className="w-10 h-10" />
                 </div>
-                <h3 className="my-4 font-semibold text-lg">Design Thinking</h3>
-                <p className="text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <h3 className="my-4 font-semibold text-lg text-slate-500">Communication</h3>
+                <p className="text-slate-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-52 bg-slate-50 rounded-md border-1 p-6">
-                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-slate-200">
-                  <Lightbulb className="w-10 h-10" />
-                </div>
-                <h3 className="my-4 font-semibold text-lg">Problem Solving</h3>
-                <p className="text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div className="w-52 bg-slate-50 rounded-md border-1 p-6">
-                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-slate-200">
+            <div className="w-52 bg-[#E8FCDB] rounded-md border-1 p-6">
+                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-green-200/70">
                   <Lightbulb className="w-10 h-10" />
                 </div>
                 <h3 className="my-4 font-semibold text-lg">Communication</h3>
@@ -115,11 +106,20 @@ const Skill = () => {
             </div>
           </div>
           <div className="flex justify-center">
-            <div className="w-52 bg-slate-50 rounded-md border-1 p-6">
-                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-slate-200">
+            <div className="w-52 bg-[#FCECEF] rounded-md border-1 p-6">
+                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-red-200/70">
                   <Lightbulb className="w-10 h-10" />
                 </div>
-                <h3 className="my-4 font-semibold text-lg">Teamwork</h3>
+                <h3 className="my-4 font-semibold text-lg">Communication</h3>
+                <p className="text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-52 bg-[#ECFCFA] rounded-md border-1 p-6">
+                <div className="w-16 h-16 rounded-full flex justify-center items-center bg-cyan-200/50">
+                  <Lightbulb className="w-10 h-10" />
+                </div>
+                <h3 className="my-4 font-semibold text-lg">Communication</h3>
                 <p className="text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
