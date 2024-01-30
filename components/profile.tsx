@@ -1,14 +1,13 @@
-import { GraduationCap } from 'lucide-react'
+import { Laugh, GraduationCap } from 'lucide-react'
 import React from 'react'
 
 const Profile = () => {
   return (
     <div className='flex justify-center flex-col'>
       <div className='flex justify-center'>
-        <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Profile</h1>
+        <h1 className='py-10 text-center font-bold text-3xl md:text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Profile</h1>
       </div>
-        
-        <div className='grid grid-cols-2 my-5'>
+        <div className='md:grid md:grid-cols-2 my-5'>
           <div className='flex justify-center items-center'>
             <div className="w-60 h-60 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 overflow-hidden"> 
               <div className="flex h-full w-full rounded-full items-center justify-center bg-white overflow-hidden">
@@ -21,9 +20,9 @@ const Profile = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className='mt-10 md:my-0'>
             <h3 className='text-xl font-bold text-slate-600 flex items-center gap-2'>
-              <GraduationCap className='w-8 h-8 text-purple-500' /> 
+              <Laugh className='w-6.5 h-6.5 text-purple-500' /> 
               About Me</h3>
             <p className='py-3'>Innovative, creative, adaptable quickly and organized well. Specialized
             in JavaScript and have some experiences in python, java, C# and flutter

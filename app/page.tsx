@@ -9,7 +9,7 @@ import Project from "@/components/project";
 
 export default function Home() {
   return (
-    <main className="px-4 lg:px-32 py-8 h-screen">
+    <main className="px-8 md:px-12 lg:px-32 py-8 h-screen">
         <Navbar />
         <Banner />
       

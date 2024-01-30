@@ -1,6 +1,89 @@
 import Image from "next/image"
 import { Lightbulb } from 'lucide-react'
 
+const skills = [
+  {
+    id: 1,
+    image: "/html.png",
+    name: "HTML",
+    width: 65,
+    height: 65,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 2,
+    image: "/css.png",
+    name: "CSS",
+    width: 80,
+    height: 80,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 3,
+    image: "/javaScript.png",
+    name: "JavaScript",
+    width: 65,
+    height: 65,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 4,
+    image: "/typeScript.png",
+    name: "typeScript",
+    width: 70,
+    height: 70,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 5,
+    image: "/bootstrap.png",
+    name: "Bootstrap",
+    width: 80,
+    height: 80,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 6,
+    image: "/tailwind.png",
+    name: "Tailwind",
+    width: 80,
+    height: 80,
+    marginTop: `pt-5`,
+  },
+  {
+    id: 7,
+    image: "/react.png",
+    name: "React",
+    width: 80,
+    height: 80,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 8,
+    image: "/next.js.png",
+    name: "Next.js",
+    width: 70,
+    height: 70,
+    marginTop: `mt-3`,
+  },
+  {
+    id: 9,
+    image: "/node.js.png",
+    name: "Node.js",
+    width: 70,
+    height: 70,
+    marginTop: `mt-0`,
+  },
+  {
+    id: 10,
+    image: "/express.js.png",
+    name: "Express.js",
+    width: 75,
+    height: 75,
+    marginTop: `mt-0`,
+  }
+]
+
 const Skill = () => {
   return (
     <div className='flex justify-center flex-col py-10'>
@@ -9,82 +92,17 @@ const Skill = () => {
         </div>
         <p className="text-center text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p>
         <div className="grid grid-cols-12 gap-4 my-14 justify-center">
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/html.png"
-              alt="HTML"
-              width={65}
-              height={65}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">HTML</p>
+          {skills.map(({ id,image, name, width, height, marginTop }) => (
+            <div key={id} className="col-span-2 flex justify-center items-center flex-col">
+              <Image 
+                src={image}
+                alt={name}
+                width={width}
+                height={height}
+              />
+            <p className={`text-center py-3 text-slate-800 font-semibold ${marginTop}`}>{name}</p>
           </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/css.png"
-              alt="CSS"
-              width={80}
-              height={80}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">CSS</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/javascript.png"
-              alt="JavaScript"
-              width={65}
-              height={65}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">JavaScript</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/typescript.png"
-              alt="Typescript"
-              width={70}
-              height={70}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">Typescript</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/express.js.png"
-              alt="Express.js"
-              width={75}
-              height={75}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">Express.js</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/react.png"
-              alt="React"
-              width={80}
-              height={80}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">React</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/next.js.png"
-              alt="Next.js"
-              width={70}
-              height={70}
-            />
-            <p className="text-center py-3 text-slate-500 font-semibold">Next.js</p>
-          </div>
-          <div className="col-span-2 flex justify-center items-center flex-col">
-            <Image 
-              src="/node.js.png"
-              alt="Node.js"
-              width={70}
-              height={70}
-            />
-          <p className="text-center py-3 text-slate-500 font-semibold">Node.js</p>
-          </div>  
+          ))}
         </div>
         <div className="grid grid-cols-4 gap-2 my-5">
           <div className="flex justify-center">

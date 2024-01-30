@@ -14,6 +14,8 @@ import {
 import { Card, CardContent } from "@/components/ui/card"
 
 import Image from "next/image"
+import { Button } from "./ui/button"
+import { Github, Globe } from 'lucide-react';
 
 interface ProjectModalProps {
     isOpen: boolean
@@ -24,22 +26,22 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="sm:max-w-md md:max-w-2xl lg:max-w-4xl">
-           <div className="grid grid-cols-12 p-5 gap-4">
-                <div className="col-span-12 lg:col-span-6 ml-5">
-                    <Carousel className="w-full max-w-xs">
+        <DialogContent className="sm:max-w-md md:max-w-2xl lg:max-w-3xl">
+           <div className="px-1 py-5">
+                <div className="flex justify-center">
+                    <Carousel className="w-full max-w-xl h-80">
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
-                            <div className="p-1">
-                            <Card className="w-600">
-                                <CardContent className="-mt-1 h-[200px] flex justify-center items-center">
+                            <div>
+                            <Card className="w-full overflow-hidden">
+                                <CardContent className="h-72 flex justify-center items-center p-0  overflow-hidden">
                                     <div className="w-full h-full relative">
                                         <Image
                                             src="/online-quiz.jpg"
                                             alt="oqs"
                                             fill
-                                            className="w-full h-full object-cover"
+                                            className="w-full h-full object-contain"
     
                                         />
                                     </div>
@@ -53,9 +55,9 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose }) => {
                     <CarouselNext />
                     </Carousel>
                 </div>
-                <div className="col-span-12 lg:col-span-6">
+                <div className="mx-16">
                     <h1 className="text-xl font-bold mb-3 text-slate-700">Online Quiz System</h1>
-                    <p className="text-sm text-muted-foreground">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                    <p className="text-sm text-muted-foreground text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
                     <div className="flex items-center gap-2 my-3">
                         <div className="bg-slate-100 rounded-full p-2">
                             <Image
@@ -81,6 +83,16 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose }) => {
                                 height={20}
                             />
                         </div>
+                    </div>
+                    <div className="flex items-center gap-4 pt-3">
+                        <Button variant="secondary">
+                            <Github className="w-5 h-5 mr-1" />
+                            Github
+                        </Button>
+                        <Button variant="secondary">
+                            <Globe className="w-5 h-5 mr-1" />
+                            Web
+                        </Button>
                     </div>
                 </div>
            </div>

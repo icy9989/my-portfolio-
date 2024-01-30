@@ -1,3 +1,4 @@
+import { Menu } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -13,7 +14,10 @@ const Navbar = () => {
                     className="absolute"
                 />
             </div> 
-            <div className="flex justify-end">
+            <div className="ml-auto md:hidden bg-slate-50 p-2 rounded-sm cursor-pointer">
+                <Menu className="w-6 h-6 text-slate-500" />
+            </div>
+            <div className="md:flex justify-end hidden">
                 <ul className="flex items-center gap-6 text-muted-foreground font-medium">
                     <li><Link href="" className="hover:text-purple-700 transition-all">Home</Link></li>
                     <li><Link href="" className="hover:text-purple-700 transition-all">Profile</Link></li>
