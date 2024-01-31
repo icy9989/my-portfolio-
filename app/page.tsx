@@ -4,7 +4,7 @@ import Profile from "@/components/profile";
 import Skill from "@/components/skill";
 import Work from "@/components/work";
 import Experiene from "@/components/experience";
-import Project from "@/components/project";
+import Projects from "@/components/projects";
 
 
 export default function Home() {
@@ -17,7 +17,7 @@ export default function Home() {
       <Skill />
       <Work />
       <Experiene />
-      <Project />
+      <Projects />
     </main>
   );
 }

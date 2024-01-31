@@ -1,4 +1,5 @@
 import { Laugh, GraduationCap } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 
 const Profile = () => {
@@ -10,13 +11,13 @@ const Profile = () => {
         <div className='md:grid md:grid-cols-2 my-5'>
           <div className='flex justify-center items-center'>
             <div className="w-60 h-60 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 overflow-hidden"> 
-              <div className="flex h-full w-full rounded-full items-center justify-center bg-white overflow-hidden">
-                {/* <Image 
-                  src="/sana.jpg"
+              <div className="flex h-full w-full rounded-full items-center justify-center bg-white overflow-hidden relative">
+                <Image
+                  src="/kmh.png"
                   alt="profile"
-                  width={300}
-                  height={300}
-                /> */}
+                  fill
+                  className="absolute object-cover rounded-full"
+                />
               </div>
             </div>
           </div>

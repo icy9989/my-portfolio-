@@ -20,29 +20,29 @@ import { Github, Globe } from 'lucide-react';
 interface ProjectModalProps {
     isOpen: boolean
     onClose: () => void
+    project: any
 }
 
-const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose }) => {
+const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, project }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-        <DialogContent className="sm:max-w-md md:max-w-2xl lg:max-w-3xl">
-           <div className="px-1 py-5">
+        <DialogContent className="max-w-md sm:max-w-2xl lg:max-w-3xl">
+           <div className="px-6 py-5">
                 <div className="flex justify-center">
-                    <Carousel className="w-full max-w-xl h-80">
+                    <Carousel className="w-full max-w-xl h-52 sm:h-80">
                     <CarouselContent>
                         {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
                             <div>
                             <Card className="w-full overflow-hidden">
-                                <CardContent className="h-72 flex justify-center items-center p-0  overflow-hidden">
+                                <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
                                     <div className="w-full h-full relative">
                                         <Image
                                             src="/online-quiz.jpg"
                                             alt="oqs"
                                             fill
                                             className="w-full h-full object-contain"
-    
                                         />
                                     </div>
                                 </CardContent>
@@ -55,7 +55,7 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose }) => {
                     <CarouselNext />
                     </Carousel>
                 </div>
-                <div className="mx-16">
+                <div className="sm:mx-1 lg:mx-12">
                     <h1 className="text-xl font-bold mb-3 text-slate-700">Online Quiz System</h1>
                     <p className="text-sm text-muted-foreground text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
                     <div className="flex items-center gap-2 my-3">
