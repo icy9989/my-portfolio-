@@ -20,10 +20,10 @@ import { Github, Globe } from 'lucide-react';
 interface ProjectModalProps {
     isOpen: boolean
     onClose: () => void
-    project: any
+    data: any
 }
 
-const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, project }) => {
+const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -31,33 +31,33 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, project }) 
            <div className="px-6 py-5">
                 <div className="flex justify-center">
                     <Carousel className="w-full max-w-xl h-52 sm:h-80">
-                    <CarouselContent>
-                        {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
-                            <div>
-                            <Card className="w-full overflow-hidden">
-                                <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
-                                    <div className="w-full h-full relative">
-                                        <Image
-                                            src="/online-quiz.jpg"
-                                            alt="oqs"
-                                            fill
-                                            className="w-full h-full object-contain"
-                                        />
-                                    </div>
-                                </CardContent>
-                            </Card>
-                            </div>
-                        </CarouselItem>
-                        ))}
-                    </CarouselContent>
+                        <CarouselContent>
+                            {data.photos.map((photo: any) => (
+                            <CarouselItem key={photo}>
+                                <div>
+                                <Card className="w-full overflow-hidden">
+                                    <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
+                                        <div className="w-full h-full relative">
+                                            <Image
+                                                src={photo}
+                                                alt="oqs"
+                                                fill
+                                                className="w-full h-full object-fill"
+                                            />
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                                </div>
+                            </CarouselItem>
+                            ))}
+                        </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />
                     </Carousel>
                 </div>
                 <div className="sm:mx-1 lg:mx-12">
-                    <h1 className="text-xl font-bold mb-3 text-slate-700">Online Quiz System</h1>
-                    <p className="text-sm text-muted-foreground text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
+                    <h1 className="text-xl font-bold mb-3">{data.title}</h1>
+                    <p className="text-sm text-muted-foreground text-justify">{data.description}</p>
                     <div className="flex items-center gap-2 my-3">
                         <div className="bg-slate-100 rounded-full p-2">
                             <Image
