@@ -105,7 +105,7 @@ const skills = [
     id: 1,
     icon: Palette,
     title: "Design Thinking",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "I have an interest in UI/UX development and like to create innovative, user-friendly, and effective solutions for end-users.",
     background: "bg-[#FCFCDB]",
     iconBg: "bg-yellow-200/60"
   },
@@ -137,11 +137,11 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className='flex justify-center flex-col py-10'>
+    <div id="skill" className='flex justify-center flex-col py-10'>
         <div className='flex justify-center'>
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>What skills I have?</h1>
         </div>
-        <p className="text-center text-slate-600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p>
+        <p className="text-center text-slate-600">Mainly worked on front-end development and have a profound knowledge on JavaScript and its frameworks and librarys. I also have an experience in working with various CSS frameworks.</p>
         <div className="grid grid-cols-12 gap-4 my-14 justify-center">
           {techs.map(({ id,image, name, width, height, paddingTop }) => (
             <div key={id} className="col-span-4 md:col-span-3 lg:col-span-2 flex justify-center items-center flex-col mb-5">
@@ -155,10 +155,10 @@ const Skill = () => {
           </div>
           ))}
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-5 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 my-5 justify-center">
           {skills.map(({ id, icon:Icon, title, description, background, iconBg }) => (
             <div key={id} className={`${id == 4 && "md:col-start-2 lg:col-start-4"} flex justify-center mb-5 lg:mb-0`}>
-              <div className={`w-52 sm:w-60 lg:w-52 xl:w-60 ${background} rounded-md border-1 p-6`}>
+              <div className={`w-72 sm:w-60 lg:w-52 xl:w-60 ${background} rounded-md border-1 p-6`}>
                   <div className={`w-16 h-16 rounded-full flex justify-center items-center ${iconBg}`}>
                     <Icon className="w-10 h-10" />
                   </div>

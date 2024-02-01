@@ -1,8 +1,50 @@
 import ProjectCard from "./project-card"
 
 const projects = [
+    // {
+    //     id: 1,
+    //     preview: "/deli-employee.png",
+    //     alt: "deli-employee",
+    //     title: "Delivery Employee",
+    //     logo: "/trailblazers.png",
+    //     width: 30,
+    //     height: 30,
+    //     introduction: "This is the online quiz system for students to take exam.",
+    //     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
+    //     mobile: true,
+    //     photos: [
+    //         "https://utfs.io/f/cd34cd67-1ce2-4351-85d3-59221968f661-1ku7el.png",
+    //         "https://utfs.io/f/6e3cda2e-27f9-4729-8454-93e385464e80-1ku7em.png",
+    //         "https://utfs.io/f/282a23a2-e878-41fb-943d-aeb487591db8-1ku7en.png",
+    //         "https://utfs.io/f/694166d2-f5c7-4867-9dc2-a398b10a6bc1-1ku7eo.png",
+    //         "https://utfs.io/f/43fc4403-c67b-4fce-81e9-06b18f0b01cd-1ku7ep.png"
+    //     ],
+    //     techs: [
+    //         {
+    //             id: 1,
+    //             src: "/html.png",
+    //             alt: "HTML",
+    //             width: 20,
+    //             height: 20
+    //         },
+    //         {
+    //             id: 2,
+    //             src: "/css.png",
+    //             alt: "CSS",
+    //             width: 25,
+    //             height: 25
+    //         },
+    //         {
+    //             id: 3,
+    //             src: "/javaScript.png",
+    //             alt: "JavaScript",
+    //             width: 20,
+    //             height: 20
+    //         }
+    //     ]
+    // },
     {
-        id: 1,
+        id: 5,
         preview: "/tbz-website.png",
         alt: "oqs-preview",
         title: "Trailblazers Website",
@@ -37,7 +79,7 @@ const projects = [
         ]
     },
     {
-        id: 2,
+        id: 6,
         preview: "/coco.png",
         alt: "coco",
         title: "Coco Ecommerce",
@@ -82,7 +124,7 @@ const projects = [
         ]
     },
     {
-        id: 3,
+        id: 7,
         preview: "/online-quiz.png",
         alt: "oqs-preview",
         title: "Online Quiz System",
@@ -148,7 +190,7 @@ const Projects = () => {
   
   return (
         <>
-        <div className='flex justify-center'>
+        <div id="project" className='flex justify-center'>
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Projects</h1>
         </div>
         <p className="text-center text-slate-600 mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p>

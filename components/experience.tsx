@@ -26,7 +26,7 @@ const experiences = [
 
 const Experiene = () => {
   return (
-    <div className='flex justify-center flex-col py-10'>
+    <div id="experience" className='flex justify-center flex-col py-10'>
         <div className='flex justify-center'>
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>Work Experiences</h1>
         </div>

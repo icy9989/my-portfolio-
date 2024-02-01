@@ -38,14 +38,26 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                                 <div>
                                 <Card className="w-full overflow-hidden">
                                     <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
-                                        <div className="w-full h-full relative">
-                                            <Image
-                                                src={photo}
-                                                alt="oqs"
-                                                fill
-                                                className="w-full h-full object-fill"
-                                            />
-                                        </div>
+                                       
+                                            {data.mobile ? (
+                                                 <div className="w-full h-full relative bg-yellow-300">
+                                                    <Image
+                                                        src={photo}
+                                                        alt="oqs"
+                                                        fill
+                                                        className="w-full h-full object-fill"
+                                                    />
+                                                </div>
+                                            ) : (
+                                            <div className="w-full h-full relative bg-yellow-300">
+                                                <Image
+                                                    src={photo}
+                                                    alt="oqs"
+                                                    fill
+                                                    className="w-full h-full object-fill"
+                                                />
+                                                </div>
+                                            )}
                                     </CardContent>
                                 </Card>
                                 </div>

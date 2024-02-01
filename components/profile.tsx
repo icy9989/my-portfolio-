@@ -4,7 +4,7 @@ import React from 'react'
 
 const Profile = () => {
   return (
-    <div className='flex justify-center flex-col'>
+    <div id="profile" className='flex justify-center flex-col'>
       <div className='flex justify-center'>
         <h1 className='py-10 text-center font-bold text-3xl md:text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Profile</h1>
       </div>
