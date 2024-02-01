@@ -3,40 +3,82 @@ import ProjectCard from "./project-card"
 const projects = [
     {
         id: 1,
-        preview: "/online-quiz.png",
+        preview: "/tbz-website.png",
         alt: "oqs-preview",
-        title: "Online Quiz System",
-        logo: "/quiz.png",
-        width: 50,
-        height: 50,
+        title: "Trailblazers Website",
+        logo: "/trailblazers.png",
+        width: 30,
+        height: 30,
         introduction: "This is the online quiz system for students to take exam.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
-        photos: [
-            "https://utfs.io/f/e7bd9d7a-94dd-4816-b201-c869f7a6056d-1r3prp.jpg",
-            "https://utfs.io/f/47128152-8c55-42d1-909c-2a749416425e-1r3prq.jpg",
-            "https://utfs.io/f/169cf950-7001-4cb5-9662-3fd65565df9f-1r3prr.jpg",
-            "https://utfs.io/f/2f992b10-f297-4e0a-a71b-688abbf9b35c-1r3prs.jpg",
-            "https://utfs.io/f/207ad2c8-f866-4ce1-8d67-43a8ce263a0f-1r3prt.jpg"
+        video: "https://utfs.io/f/a02065e8-34a0-45a1-910c-ba9ae1599ef7-ejt5f5.mp4",
+        techs: [
+            {
+                id: 1,
+                src: "/html.png",
+                alt: "HTML",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 2,
+                src: "/css.png",
+                alt: "CSS",
+                width: 25,
+                height: 25
+            },
+            {
+                id: 3,
+                src: "/javaScript.png",
+                alt: "JavaScript",
+                width: 20,
+                height: 20
+            }
         ]
     },
     {
         id: 2,
-        preview: "/online-quiz.png",
-        alt: "oqs-preview",
-        title: "Online Quiz System",
-        logo: "/quiz.png",
-        width: 50,
-        height: 50,
+        preview: "/coco.png",
+        alt: "coco",
+        title: "Coco Ecommerce",
+        logo: "/coco-logo.png",
+        width: 30,
+        height: 30,
         introduction: "This is the online quiz system for students to take exam.",
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type",
         web: "#",
         github: "#",
         photos: [
-            "https://utfs.io/f/e7bd9d7a-94dd-4816-b201-c869f7a6056d-1r3prp.jpg",
-            "https://utfs.io/f/47128152-8c55-42d1-909c-2a749416425e-1r3prq.jpg",
-            "https://utfs.io/f/169cf950-7001-4cb5-9662-3fd65565df9f-1r3prr.jpg",
-            "https://utfs.io/f/2f992b10-f297-4e0a-a71b-688abbf9b35c-1r3prs.jpg",
-            "https://utfs.io/f/207ad2c8-f866-4ce1-8d67-43a8ce263a0f-1r3prt.jpg"
+            "https://utfs.io/f/48419625-c69b-44ad-a24f-b4b91bd6d612-mesryc.png",
+            "https://utfs.io/f/7d848e6e-9744-4b5d-86a8-02469add2131-mesryb.png",
+            "https://utfs.io/f/75b9293e-7fd4-4868-84e1-c49e4795c495-mesrya.png",
+            "https://utfs.io/f/62a022fb-7525-48aa-ba40-9db8a0231510-mesry9.png",
+            "https://utfs.io/f/5194ae0d-9a77-4f42-8f3b-130aa54f1fe0-mesry8.png",
+            "https://utfs.io/f/86526ba5-0316-4743-9a47-a58f2d9442a0-mesry7.png",
+            "https://utfs.io/f/481ef4ad-512b-4a9f-a4cc-35367607ca7e-mesry6.png"
+        ],
+        techs: [
+            {
+                id: 1,
+                src: "/html.png",
+                alt: "HTML",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 2,
+                src: "/css.png",
+                alt: "CSS",
+                width: 25,
+                height: 25
+            },
+            {
+                id: 3,
+                src: "/javaScript.png",
+                alt: "JavaScript",
+                width: 20,
+                height: 20
+            }
         ]
     },
     {
@@ -74,6 +116,29 @@ const projects = [
             "https://utfs.io/f/b5b72c5e-b4a1-43bf-a9a4-0b38d6a62f06-gowv2e.jpg",
             "https://utfs.io/f/2b287137-d717-4f20-8ae4-24ff076167e9-gowv2d.jpg",
             "https://utfs.io/f/af5b0cc5-5f9d-4255-9735-454e0231d8e4-gowv2c.jpg"
+        ],
+        techs: [
+            {
+                id: 1,
+                src: "/html.png",
+                alt: "HTML",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 2,
+                src: "/css.png",
+                alt: "CSS",
+                width: 25,
+                height: 25
+            },
+            {
+                id: 3,
+                src: "/javaScript.png",
+                alt: "JavaScript",
+                width: 20,
+                height: 20
+            }
         ]
     }
 ]

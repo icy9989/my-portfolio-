@@ -30,7 +30,8 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
         <DialogContent className="max-w-md sm:max-w-2xl lg:max-w-3xl">
            <div className="px-6 py-5">
                 <div className="flex justify-center">
-                    <Carousel className="w-full max-w-xl h-52 sm:h-80">
+                    {data.photos && (
+                        <Carousel className="w-full max-w-xl h-52 sm:h-80">
                         <CarouselContent>
                             {data.photos.map((photo: any) => (
                             <CarouselItem key={photo}>
@@ -54,45 +55,47 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                     <CarouselPrevious />
                     <CarouselNext />
                     </Carousel>
+                    )}
+                    {data.video && (
+                        <div className="rounded-md border-1 border-slate-200 md:mx-2 lg:mx-12 mb-10">
+                            <video width="100%" height="100%" className="rounded-md" controls>
+                                <source src={data.video} type="video/mp4" />
+                            </video>
+                        </div>
+                    )}
                 </div>
                 <div className="sm:mx-1 lg:mx-12">
                     <h1 className="text-xl font-bold mb-3">{data.title}</h1>
                     <p className="text-sm text-muted-foreground text-justify">{data.description}</p>
                     <div className="flex items-center gap-2 my-3">
-                        <div className="bg-slate-100 rounded-full p-2">
-                            <Image
-                                src="/html.png"
-                                alt="Html"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
-                        <div className="bg-slate-100 rounded-full p-2">
-                            <Image
-                                src="/css.png"
-                                alt="Css"
-                                width={25}
-                                height={25}
-                            />
-                        </div>
-                        <div className="bg-slate-100 rounded-full p-2">
-                            <Image
-                                src="/javaScript.png"
-                                alt="JavaScript"
-                                width={20}
-                                height={20}
-                            />
-                        </div>
+                        {data.techs.map((tech: any) => (
+                            <div key={tech.id} className="bg-slate-100 rounded-full p-2">
+                                <Image
+                                    src={tech.src}
+                                    alt={tech.alt}
+                                    width={tech.width}
+                                    height={tech.height}
+                                />
+                            </div>
+                        ))}
                     </div>
                     <div className="flex items-center gap-4 pt-3">
-                        <Button variant="secondary">
-                            <Github className="w-5 h-5 mr-1" />
-                            Github
-                        </Button>
-                        <Button variant="secondary">
-                            <Globe className="w-5 h-5 mr-1" />
-                            Web
-                        </Button>
+                        {data.github && (
+                            <Button variant="outline">
+                                <a href={data.github} className="flex items-center">
+                                    <Github className="w-4 h-4 mr-1" />
+                                    GitHub
+                                </a>
+                            </Button>
+                        )}
+                        {data.web && (
+                            <Button variant="outline">
+                                <a href={data.web} className="flex items-center">
+                                    <Globe className="w-4 h-4 mr-1" />
+                                    Web
+                                </a>
+                            </Button>
+                        )}
                     </div>
                 </div>
            </div>

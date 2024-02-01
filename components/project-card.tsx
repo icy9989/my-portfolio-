@@ -31,13 +31,15 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ data }) => {
             </div> 
             <div className="p-4">   
                 <div className="mb-4">
-                    <h3 className="font-semibold text-lg mb-1">
+                    <div className="h-14 flex items-center">
                         <Image 
-                            src="/quiz.png"
+                            src={data.logo}
                             alt="Quiz-logo"
                             width={data.width}
                             height={data.height}
                         />
+                    </div>
+                    <h3 className="font-semibold text-lg mb-1">
                         {data.title}
                     </h3>
                     <div className="h-16">
@@ -63,7 +65,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ data }) => {
                                         <Github className="w-3.5 h-3.5 mr-1" />
                                         GitHub
                                     </a>
-                                    </Button>
+                                </Button>
                             )}     
                     </div>
              </div>
