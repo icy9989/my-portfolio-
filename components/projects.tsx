@@ -664,7 +664,7 @@ const Projects = () => {
         <div id="project" className='flex justify-center'>
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Projects</h1>
         </div>
-        <p className="text-center text-slate-600 mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p>
+        {/* <p className="text-center text-slate-600 mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p> */}
         <div className="grid grid-cols-12 gap-8 mb-10 pb-14">
             {projects.map((project) => (
                 <ProjectCard data={project} key={project.id} />
