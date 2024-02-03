@@ -53,7 +53,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ data }) => {
                             </Button>
                             {data.web && (
                                 <Button variant="transparent" className="p-0 m-0">
-                                    <a href={data.web} className="flex items-center">
+                                    <a href={data.web} className="flex items-center" target="_blank">
                                         <Globe className="w-3.5 h-3.5 mr-1" />
                                         Web
                                     </a>
@@ -61,7 +61,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ data }) => {
                                 )} 
                             {data.github && (
                                 <Button variant="transparent" className="p-0 m-0">
-                                    <a href={data.github} className="flex items-center">
+                                    <a href={data.github} className="flex items-center" target="_blank">
                                         <Github className="w-3.5 h-3.5 mr-1" />
                                         GitHub
                                     </a>

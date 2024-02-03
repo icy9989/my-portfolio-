@@ -31,33 +31,35 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
            <div className="px-6 py-5">
                 <div className="flex justify-center">
                     {data.photos && (
-                        <Carousel className="w-full max-w-xl h-52 sm:h-80">
+                        <Carousel className={`w-full max-w-[300px] sm:max-w-lg md:max-w-xl ${data.mobile ? "h-60" : "h-52"} sm:h-80`}>
                         <CarouselContent>
                             {data.photos.map((photo: any) => (
                             <CarouselItem key={photo}>
                                 <div>
-                                <Card className="w-md overflow-hidden">
-                                    <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
-                                            {data.mobile ? (
-                                                 <div className="w-40 sm:w-44 h-full relative">
+                                <Card className="w-full overflow-hidden">
+                                    {data.mobile ? (
+                                        <CardContent className="h-52 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
+                                            <div className="w-full h-full relative">
                                                     <Image
                                                         src={photo}
                                                         alt="oqs"
                                                         fill
-                                                        className="object-fill"
+                                                        className="object-contain"
                                                     />
                                                 </div>
-                                            ) : (
+                                        </CardContent>
+                                    ) : (
+                                        <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
                                             <div className="w-full h-full relative">
                                                 <Image
                                                     src={photo}
                                                     alt="oqs"
                                                     fill
-                                                    className="w-full h-full object-fit"
+                                                    className="w-full h-full object-fill"
                                                 />
                                                 </div>
-                                            )}
-                                    </CardContent>
+                                        </CardContent>
+                                    )}
                                 </Card>
                                 </div>
                             </CarouselItem>
@@ -93,7 +95,7 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                     <div className="flex items-center gap-4 pt-3">
                         {data.github && (
                             <Button variant="outline">
-                                <a href={data.github} className="flex items-center">
+                                <a href={data.github} className="flex items-center" target="_blank">
                                     <Github className="w-4 h-4 mr-1" />
                                     GitHub
                                 </a>
@@ -101,7 +103,7 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                         )}
                         {data.web && (
                             <Button variant="outline">
-                                <a href={data.web} className="flex items-center">
+                                <a href={data.web} className="flex items-center" target="_blank">
                                     <Globe className="w-4 h-4 mr-1" />
                                     Web
                                 </a>

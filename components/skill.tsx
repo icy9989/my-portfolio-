@@ -20,7 +20,7 @@ const techs = [
   },
   {
     id: 3,
-    image: "/javaScript.png",
+    image: "/javascript.png",
     name: "JavaScript",
     width: 65,
     height: 65,
@@ -28,7 +28,7 @@ const techs = [
   },
   {
     id: 4,
-    image: "/typeScript.png",
+    image: "/typescript.png",
     name: "typeScript",
     width: 70,
     height: 70,
@@ -113,7 +113,7 @@ const skills = [
     id: 2,
     icon: Lightbulb,
     title: "Problem Solving",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "I like to take challenges,solve problems and deliver solutions that are efficient, scalable, and maintainable.",
     background: "bg-[#E8FCDB]",
     iconBg: "bg-green-200/70"
   },
@@ -121,7 +121,7 @@ const skills = [
     id: 3,
     icon: HeartHandshake,
     title: "Communication",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "I am always active for collaboration within developers, contribute to positive environments and wants to avoid misunderstanding.",
     background: "bg-[#FCECEF] ",
     iconBg: "bg-red-200/70"
   },
@@ -129,7 +129,7 @@ const skills = [
     id: 4,
     icon: Users,
     title: "Teamwork",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    description: "I am flexible and always welcome for collaborations, advices and discussions from teammates.",
     background: "bg-[#ECFCFA]",
     iconBg: "bg-cyan-200/50"
   },
