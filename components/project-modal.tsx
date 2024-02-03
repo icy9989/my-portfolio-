@@ -36,25 +36,24 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                             {data.photos.map((photo: any) => (
                             <CarouselItem key={photo}>
                                 <div>
-                                <Card className="w-full overflow-hidden">
+                                <Card className="w-md overflow-hidden">
                                     <CardContent className="h-44 sm:h-72 flex justify-center items-center p-0 overflow-hidden">
-                                       
                                             {data.mobile ? (
-                                                 <div className="w-full h-full relative bg-yellow-300">
+                                                 <div className="w-40 sm:w-44 h-full relative">
                                                     <Image
                                                         src={photo}
                                                         alt="oqs"
                                                         fill
-                                                        className="w-full h-full object-fill"
+                                                        className="object-fill"
                                                     />
                                                 </div>
                                             ) : (
-                                            <div className="w-full h-full relative bg-yellow-300">
+                                            <div className="w-full h-full relative">
                                                 <Image
                                                     src={photo}
                                                     alt="oqs"
                                                     fill
-                                                    className="w-full h-full object-fill"
+                                                    className="w-full h-full object-fit"
                                                 />
                                                 </div>
                                             )}
@@ -69,7 +68,7 @@ const ProjectModal:React.FC<ProjectModalProps> = ({ isOpen, onClose, data }) => 
                     </Carousel>
                     )}
                     {data.video && (
-                        <div className="rounded-md border-1 border-slate-200 md:mx-2 lg:mx-12 mb-10">
+                        <div className="w-full h-full rounded-md border-1 border-slate-200 md:mx-2 lg:mx-12 mb-10">
                             <video width="100%" height="100%" className="rounded-md" controls>
                                 <source src={data.video} type="video/mp4" />
                             </video>
