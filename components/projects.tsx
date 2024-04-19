@@ -2,18 +2,89 @@ import ProjectCard from "./project-card"
 
 const projects = [
     {
-        id: 1,
-        preview: "/may-myanmar.png",
+        id: 10,
+        preview: "/mwk-profit.png",
+        alt: "mwk-profit",
+        title: "Goods Profit",
+        logo: "/mwk.png",
+        width: 50,
+        height: 50,
+        introduction: "This is a freelance project for Moe Wai Kyaw which enhance raw food material management for peak profitability.",
+        description: "This project equips Moe Wai Kyaw with a full-fledged solution for managing raw food materials. It tracks inventory, computes ideal selling prices, and generates in-depth reports on top-selling items and monthly profits. Plus, it offers expense tracking to analyze spending across different categories, empowering strategic decision-making and fostering sustainable growth. Built with Flutter, Node.js, Express.js, MySQL, and SQLite.",
+        mobile: true,
+        github: "https://github.com/icy9989/mwk-goods-profit.git",
+        photos: [
+            "https://utfs.io/f/329d50f8-7224-4379-9ab0-7b205afb7c0c-hjt2ml.jpg",
+            "https://utfs.io/f/629f5327-c88e-4733-91b6-d10529208d52-hjt2mk.jpg",
+            "https://utfs.io/f/7380522d-7b26-4aa0-8a9c-0a1960da0bd7-hjt2mj.jpg",
+            "https://utfs.io/f/8bd28f3a-3cdf-422d-8fd3-56e23eb79e5d-hjt2mi.jpg",
+            "https://utfs.io/f/8db85726-8bc9-4dfb-bd72-528edf0eaa2e-hjt2mh.jpg",
+            "https://utfs.io/f/4cbc3264-d2c9-4c79-93a8-b3878ce11179-hjt2mg.jpg",
+            "https://utfs.io/f/807ad6af-cca6-4d1c-b76f-0123a45b35ff-hjt2mf.jpg",
+            "https://utfs.io/f/20c4c89e-41d1-4165-9df9-b69e4c6d4027-hjt2me.jpg",
+            "https://utfs.io/f/3e42b72f-9be3-4090-9429-9c0dbca77fdd-hjt2md.jpg",
+            "https://utfs.io/f/2d851787-73df-4eed-96f1-a9b0b57f7327-o6v6e5.jpg",
+            "https://utfs.io/f/0859d2ad-fafb-4b12-8446-0cac7032615a-o6v6e6.jpg"
+        ],
+        techs: [
+            {
+                id: 1,
+                src: "/flutter.png",
+                alt: "Flutter",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 2,
+                src: "/javascript.png",
+                alt: "JavaScript",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 3,
+                src: "/node.js.png",
+                alt: "Node.js",
+                width: 20,
+                height: 20
+            },
+            {
+                id: 4,
+                src: "/express.js.png",
+                alt: "Express.js",
+                width: 20,
+                height: 20
+            },
+            // {
+            //     id: 10,
+            //     src: "mySql.png",
+            //     alt: "mySql",
+            //     width: 20,
+            //     height: 20
+            // },
+            {
+                id: 6,
+                src: "/sqLite.png",
+                alt: "SQLite",
+                width: 20,
+                height: 20
+            },
+        ]
+    },
+    {
+        id: 9,
+        preview: "/mm-preview.png",
         alt: "may-myanmar-preview",
         title: "May Myanmar",
         logo: "/mm.jpg",
         width: 40,
         height: 30,
-        introduction: "This a project for May Myanmar local food Industry which handles various processes.",
-        description: "This a project for May Myanmar local food Industry and it includes dashboard for tracking daily, monthly and yearly incomes,  expenses and profits, customer management, product management, order management, income and expense. This project is implemented using HTML, CSS, Tailwind, Shadcn, TypeScript, Next.js and MongdoDB.",
+        introduction: "This a freelance project for May Myanmar local food Industry which handles various processes.",
+        description: "This project is for the May Myanmar local food industry, encompassing a dashboard to track daily, monthly, and yearly incomes, expenses, and profits. It also includes features for customer management, product management, order management, income, and expenses. The project is implemented using HTML, CSS, Tailwind, Shadow, TypeScript, Next.js, and MongoDB",
         photos: [
             "https://utfs.io/f/63cd9feb-198f-4923-966a-80b2c4c5b929-1zvic.png",
-            "https://utfs.io/f/0215d299-725b-4a1b-b183-ba6a64c8d648-1zvid.png",
+            "https://utfs.io/f/fc13ee77-d95f-40ca-9b6a-c74e7349a9b9-1pw4ts.png",
+            "https://utfs.io/f/f92c9d38-becc-4d21-ac27-ccba51a0a42f-1pw4tt.png",
             "https://utfs.io/f/9dd5528a-6e83-46df-a2ac-6b6a94b424f3-1zvie.png",
             "https://utfs.io/f/3fdd6688-a13a-4afc-a1c4-8b4cf9a2ea02-1zvif.png",
             "https://utfs.io/f/a8364c7b-ebc9-4ca2-8d31-66a7e7eb928d-1zvig.png",
@@ -22,6 +93,12 @@ const projects = [
             "https://utfs.io/f/90e6f367-7fac-4e12-bcbf-12225ebacf98-1zvij.png",
             "https://utfs.io/f/6e2a27d2-a431-4629-8113-5fedee4bc036-1zvik.png",
             "https://utfs.io/f/d1a0d181-0b76-4219-8f0e-41e46806858e-1pw4to.png",
+            "https://utfs.io/f/69010a6c-a9ef-4a0a-8d89-0358687cc022-1pw4tu.png",
+            "https://utfs.io/f/4987570d-8d2a-46ee-9d28-ab51aad7a195-1pw4tv.png",
+            "https://utfs.io/f/90aa7308-8b90-4276-b98f-766e80c38437-1pw4tw.png",
+            "https://utfs.io/f/b0f9395f-ee6f-4c1e-82f1-b9e792ff8957-1pw4tx.png",
+            "https://utfs.io/f/7eb347c3-bd6d-4d13-8230-b34b65afe242-1pw4uj.png",
+            "https://utfs.io/f/2ea748fe-cffc-4ab6-9ecd-8ecfbb79add7-1pw4uk.png",
             "https://utfs.io/f/6d3865e7-bdb6-474c-ace0-35319cbea993-1pw4tp.png",
             "https://utfs.io/f/c8bcd76c-a3b5-4520-900c-1da707a2a1fd-1pw4tq.png",
             "https://utfs.io/f/190ad36a-2ef9-4dfb-a895-d1c417bdd48a-1pw4tr.png"
@@ -72,15 +149,15 @@ const projects = [
         ]
     },
     {
-        id: 2,
-        preview: "/dover.png",
+        id: 8,
+        preview: "/dover-preview.png",
         alt: "dover-preview",
         title: "Dover",
-        logo: "/d.jpg",
+        logo: "/dover.jpg",
         width: 60,
         height: 40,
-        introduction: "This project is about water management system for local water factory.",
-        description: "This project is about water management system for local water factory and it contains multiple functions including daily sales across agents and factory, managing water bottles, income, expense and tracking water bottle based on specific customer.",
+        introduction: "This freelance project focuses on awater management system for local water factory.",
+        description: "This project focuses on a water management system for a local water factory, incorporating various functions such as daily sales across agents and the factory, water bottle management, income and expense tracking, and monitoring water bottle distribution to specific customers.",
         web: "https://host-dover.web.app",
         photos: [
             "https://utfs.io/f/b5089bb4-7216-4721-9140-d4975c912257-uj1vx8.png",
@@ -139,15 +216,15 @@ const projects = [
         ]
     },
     {
-        id: 3,
-        preview: "/deli-admin-panel.png",
+        id: 7,
+        preview: "/deli-admin-preview.png",
         alt: "deli-admin-panel-preview",
         title: "Delivery Admin Panel",
-        logo: "/trailblazers.png",
+        logo: "/tbz.png",
         width: 30,
         height: 30,
         introduction: "This is a delivery admin panel for processing orders,tracking delivery shippment and include various managements.",
-        description: "This is a delivery admin panel for delivery services which includes employee management, customer management, order management, select products with both manaul select and scanner, bus route management, gate management, track shipping process, notify shipping messages to customer and give permissions to delivery services' employees. This project is implemented using HTML, CSS, Tailwind, Material UI, JavaScript, React, Node.js, Express.js, MySQL and SQLite.",
+        description: "This delivery admin panel is designed for delivery services, offering features such as employee management, customer management, order management, manual and scanner-based product selection, bus route management, gate management, shipment tracking, customer notification messaging, and permissions management for delivery service employees. The project is implemented using HTML, CSS, Tailwind, Material UI, JavaScript, React, Node.js, Express.js, MySQL, and SQLite.",
         techs: [
             {
                 id: 1,
@@ -229,15 +306,15 @@ const projects = [
         ]
     },
     {
-        id: 4,
-        preview: "/deli-super-admin.png",
+        id: 6,
+        preview: "/deli-superadmin-preview.png",
         alt: "deli-super-admin-preview",
         title: "Delivery Superadmin Panel",
-        logo: "/trailblazers.png",
+        logo: "/tbz.png",
         width: 30,
         height: 30,
         introduction: "This is a delivery superadmin panel for trailblazers to monitor various delivery services.",
-        description: "This is a delivery superadmin panel for trailblazers which includes delivery services' organization management, managing admin users and give roles and permissions to admins and gate management. This project is implemented using HTML, CSS, Tailwind, Material UI, JavaScript, React, Node.js, Express.js, MySQL and SQLite.",
+        description: "This delivery superadmin panel caters to Trailblazers, offering organization management for delivery services, administration of admin users with role and permission assignments, and gate management functionalities. Implemented with HTML, CSS, Tailwind, Material UI, JavaScript, React, Node.js, Express.js, MySQL, and SQLite.",
         techs: [
             {
                 id: 1,
@@ -320,14 +397,14 @@ const projects = [
     },
     {
         id: 5,
-        preview: "/deli-employee.png",
+        preview: "/deli-employee-preview.png",
         alt: "deli-employee",
         title: "Delivery Employee",
-        logo: "/trailblazers.png",
+        logo: "/tbz.png",
         width: 30,
         height: 30,
         introduction: "This is a delivery app for employees to place an order and process delivery shippment.",
-        description: "This is a delivery app for delivery services' employees which include order management, customer management, select products with both manaul select and scanner, bus route management and track shipping process and notify shipping messages to customer. This project is implemented using Flutter, Node.js, Express.js, MySQL and SQLite.",
+        description: "This delivery app caters to employees of delivery services, offering features such as order and customer management, product selection via manual input or scanner, bus route management, shipment tracking, and customer notification messaging. Implemented using Flutter, Node.js, Express.js, MySQL, and SQLite.",
         mobile: true,
         photos: [
             "https://utfs.io/f/cd34cd67-1ce2-4351-85d3-59221968f661-1ku7el.png",
@@ -406,15 +483,15 @@ const projects = [
         ]
     },
     {
-        id: 6,
-        preview: "/deli-customer.png",
+        id: 4,
+        preview: "/deli-customer-preview.png",
         alt: "deli-customer",
         title: "Delivery Customer",
-        logo: "/trailblazers.png",
+        logo: "/tbz.png",
         width: 30,
         height: 30,
         introduction: "This is a delivery app for customers to check out their orders and get connected with various delivery services.",
-        description: "This is a delivery app for delivery services' customers which includes tracking orders, connecting with various delivery services, updating and notifying messages for order shipping process. This project is implemented using Flutter,  Node.js, Express.js, MySQL and SQLite.",
+        description: "This delivery app is designed for customers of delivery services, providing functionalities like order tracking, connecting with different delivery services, and receiving updates and notifications about the shipping process. Implemented with Flutter, Node.js, Express.js, MySQL, and SQLite.",
         mobile: true,
         photos: [
             "https://utfs.io/f/338a67b7-a100-46cf-ac41-1482626d1ddc-m33obz.png",
@@ -474,15 +551,15 @@ const projects = [
         ]
     },
     {
-        id: 7,
-        preview: "/tbz-website.png",
-        alt: "oqs-preview",
+        id: 3,
+        preview: "/tbz-preview.png",
+        alt: "tbz-website-preview",
         title: "Trailblazers Website",
-        logo: "/trailblazers.png",
+        logo: "/tbz.png",
         width: 30,
         height: 30,
         introduction: "This is a website template for trailblazers.",
-        description: "This is a website template for trailblazers and it includes home, products, services, clients and contact session. This project is implemented using HTML, CSS, JavaScript, React and Firebase.",
+        description: "This website template is tailored for Trailblazers, featuring sections for home, products, services, clients, and contact. Implemented with HTML, CSS, JavaScript, React, and Firebase.",
         video: "https://utfs.io/f/a02065e8-34a0-45a1-910c-ba9ae1599ef7-ejt5f5.mp4",
         techs: [
             {
@@ -523,15 +600,15 @@ const projects = [
         ]
     },
     {
-        id: 8,
-        preview: "/coco.png",
-        alt: "coco",
+        id: 2,
+        preview: "/coco-preview.png",
+        alt: "coco-preview",
         title: "Coco Ecommerce",
-        logo: "/coco-logo.png",
+        logo: "/coco.png",
         width: 30,
         height: 30,
         introduction: "This is coco e-commerce store for users to purchase products online,  place an orders and track shipping process.",
-        description: "This is coco e-commerce store for users to purchase products online, place an orders and track shipping process. This project is implemented using HTML, CSS, Bootstrap, JavaScript, JQuery and Django framework.",
+        description: "Introducing Coco, an e-commerce store offering users a seamless online shopping experience. Customers can browse products, place orders, and easily track the shipping process. This project is crafted using HTML, CSS, Bootstrap, JavaScript, JQuery, and the Django framework.",
         web: "https://icy9989.pythonanywhere.com",
         github: "https://github.com/icy9989/django_e-commerce",
         photos: [
@@ -582,15 +659,15 @@ const projects = [
         ]
     },
     {
-        id: 9,
-        preview: "/online-quiz.png",
+        id: 1,
+        preview: "/oqs-preview.png",
         alt: "oqs-preview",
         title: "Online Quiz System",
         logo: "/quiz.png",
         width: 50,
         height: 50,
         introduction: "This is an online quiz system that allow students to take exam with timer and generate automatic scores.",
-        description: "This is an online quiz system that allow students to take exam with timer and generate automatic scores. It includes three roles: administrator, teachers and students and each roles have their own permissions and accessibilities. This project is implemented using HTML, CSS, Bootstrap, JavaScript, JQuery and Java(J2ee).",
+        description: "Introducing an online quiz system designed to streamline student exams with a built-in timer and automatic score generation. The system accommodates three distinct roles: administrators, teachers, and students, each with their own set of permissions and access levels. Developed using HTML, CSS, Bootstrap, JavaScript, JQuery, and Java",
         github: "https://github.com/icy9989/j2ee_online-quiz",
         photos: [
             "https://utfs.io/f/e7bd9d7a-94dd-4816-b201-c869f7a6056d-1r3prp.jpg",
@@ -665,7 +742,7 @@ const Projects = () => {
           <h1 className='py-10 text-center font-bold text-4xl bg-gradient-to-r from-yellow-500 via-pink-400 to-pink-500 inline-block text-transparent bg-clip-text'>My Projects</h1>
         </div>
         {/* <p className="text-center text-slate-600 mb-10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s </p> */}
-        <div className="grid grid-cols-12 gap-8 mb-10 pb-14">
+        <div className="grid grid-cols-12 gap-8 mb-10 pb-14 justify-center items-center">
             {projects.map((project) => (
                 <ProjectCard data={project} key={project.id} />
             ))}

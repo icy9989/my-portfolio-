@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import styles from "../styles/spinning-image.module.css";
 
 const navbars = [
     {
@@ -30,6 +31,7 @@ const navbars = [
 ]
 
 const Navbar = () => {
+
   return (
     <nav>
         <div className="flex justify-between items-center">
@@ -38,12 +40,12 @@ const Navbar = () => {
                     src="/logo.png" 
                     alt="Logo"
                     fill
-                    className="absolute"
+                    className={`absolute ${styles.image}`}
                 />
             </div> 
-            <div className="ml-auto md:hidden bg-slate-50 p-2 rounded-sm cursor-pointer">
+            {/* <div className="ml-auto md:hidden bg-slate-50 p-2 rounded-sm cursor-pointer">
                 <Menu className="w-6 h-6 text-slate-500" />
-            </div>
+            </div> */}
             <div className="md:flex justify-end hidden">
                 <ul className="flex items-center gap-6 font-medium">
                     <li><Link href="" className="hover:text-purple-700 transition-all">Home</Link></li>

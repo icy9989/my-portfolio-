@@ -17,7 +17,7 @@ const ProjectCard:React.FC<ProjectCardProps> = ({ data }) => {
     return (
         <>
         <ProjectModal isOpen={openProjectModal} onClose={() => setOpenProjectModal(false)} data={data} /> 
-        <div className="col-span-12 sm:col-span-10 md:col-span-6 xl:col-span-4 mx-auto sm:mx-4 flex justify-center items-center">
+        <div className="col-span-12 sm:col-span-10 md:col-span-6 xl:col-span-4 sm:mx-4 flex justify-center items-center">
         <div className="border-2 bg-slate-50 border-slate-100/70 rounded-md shadow-sm">
             <div className="p-4 bg-white rounded-md flex justify-center items-center">
                 <div className="w-72 h-40 relative">
