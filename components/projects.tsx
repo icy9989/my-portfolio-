@@ -3,7 +3,7 @@ import ProjectCard from "./project-card"
 const projects = [
     {
         id: 10,
-        preview: "/mwk-profit.png",
+        preview: "/mwk-profit-preview.png",
         alt: "mwk-profit",
         title: "Goods Profit",
         logo: "/mwk.png",
